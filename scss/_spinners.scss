@@ -9,21 +9,21 @@
 .spinner-border {
   position: relative;
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: $spinner-width;
+  height: $spinner-height;
   overflow: hidden;
   text-indent: -999em;
   vertical-align: text-bottom;
-  border: .25em solid;
+  border: $spinner-border-width solid;
   border-color: currentColor transparent currentColor currentColor;
   border-radius: 50%;
   animation: spinner-border .75s linear infinite;
 }
 
 .spinner-border-sm {
-  width: 1rem;
-  height: 1rem;
-  border-width: .2em;
+  width: $spinner-width-sm;
+  height: $spinner-height-sm;
+  border-width: $spinner-border-width-sm;
 }
 
 //
@@ -47,8 +47,8 @@
 .spinner-grow {
   position: relative;
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: $spinner-width;
+  height: $spinner-height;
   overflow: hidden;
   text-indent: -999em;
   vertical-align: text-bottom;
@@ -58,6 +58,6 @@
 }
 
 .spinner-grow-sm {
-  width: 1rem;
-  height: 1rem;
+  width: $spinner-width-sm;
+  height: $spinner-height-sm;
 }
