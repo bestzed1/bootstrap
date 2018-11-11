@@ -21,25 +21,15 @@ Use the border spinners for a lightweight loading indicator.
 {% endcapture %}
 {% include example.html content=example %}
 
-### Reverse
-
-You can also reverse the spinner's border with `.spinner-border-reverse`.
-
-{% capture example %}
-<div class="spinner-border spinner-border-reverse" role="status">Loading...</div>
-{% endcapture %}
-{% include example.html content=example %}
-
 ### Colors
 
-The border spinner uses `currentColor` for its `border-color`, meaning you can customize the color with [text color utilities][color]. Here's the regular and reverse border spinner in blue.
+The border spinner uses `currentColor` for its `border-color`, meaning you can customize the color with [text color utilities][color]. Here's the regular border spinner in blue.
 
 <div class="bd-example">
   <div class="spinner-border text-primary" role="status">Loading...</div>
-  <div class="spinner-border spinner-border-reverse text-primary" role="status">Loading...</div>
 </div>
 
-Use any of our text color utilities on the standard or reversed border spinner.
+Use any of our text color utilities on the standard spinner.
 
 {% highlight html %}
 {% for color in site.data.theme-colors %}
@@ -81,7 +71,6 @@ Use [margin utilities][margin] like `.m-5` for easy spacing.
 
 {% capture example %}
 <div class="spinner-border m-5" role="status">Loading...</div>
-<div class="spinner-border spinner-border-reverse m-5" role="status">Loading...</div>
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -130,8 +119,6 @@ Add `.spinner-border-sm` and `.spinner-grow-sm` to make a smaller spinner that c
 
 {% capture example %}
 <div class="spinner-border spinner-border-sm" role="status">Loading...</div>
-<div class="spinner-border spinner-border-reverse spinner-border-sm" role="status">Loading...</div>
-
 <div class="spinner-grow spinner-grow-sm" role="status">Loading...</div>
 {% endcapture %}
 {% include example.html content=example %}
@@ -140,8 +127,6 @@ Or, use custom CSS or inline styles to change the dimensions as needed.
 
 {% capture example %}
 <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">Loading...</div>
-<div class="spinner-border spinner-border-reverse" style="width: 3rem; height: 3rem;" role="status">Loading...</div>
-
 <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">Loading...</div>
 {% endcapture %}
 {% include example.html content=example %}
